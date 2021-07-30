@@ -1,0 +1,361 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.toppage {
+  height: 100vh;
+  background-color: rgba(5, 80, 82, 0.8);
+  padding: 30px;
+}
+
+.toppage .box {
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.toppage .box .nav {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 1px solid black;
+  background-color: #f3f2c9;
+  color: #055052;
+}
+
+.toppage .box .nav .start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+}
+
+.toppage .box .nav .start .button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #055052;
+}
+
+.toppage .box .nav .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.toppage .box .nav .end .themechanger {
+  padding: 10px;
+}
+
+.toppage .box .nav .end .themechanger .slider {
+  width: 60px;
+  position: relative;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.toppage .box .nav .end .themechanger .slider .sliderinner {
+  border-radius: 20px;
+  width: 60px;
+  height: 25px;
+  background-color: #055052;
+}
+
+.toppage .box .nav .end .themechanger .slider .block {
+  height: 30px;
+  position: absolute;
+  background-color: white;
+  width: 30px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.toppage .box .content {
+  background-color: #f3f2c9;
+  color: #055052;
+  border-radius: inherit;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.toppage .box .content h1 {
+  text-align: center;
+}
+
+.toppage .box .content .checkbtn {
+  cursor: pointer;
+  border: 0px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-weight: 600;
+  color: #f3f2c9;
+  background-color: #055052;
+}
+
+.bottompage {
+  height: 100vh;
+  background-color: rgba(5, 80, 82, 0.8);
+  padding: 30px;
+}
+
+.bottompage .box {
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.bottompage .box .nav {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+  background-color: #f3f2c9;
+  color: #055052;
+}
+
+.bottompage .box .nav .themechanger {
+  padding: 10px;
+}
+
+.bottompage .box .content {
+  background-color: #f3f2c9;
+  color: #055052;
+  border: 0px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.bottompage .box .content h1 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.bottompage .box .content .birthdateinput {
+  border: 2px solid #055052;
+  color: #055052;
+  background-color: #f3f2c9;
+  height: 30px;
+  width: 180px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.bottompage .box .content .checkbtn {
+  cursor: pointer;
+  border: 0px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #f3f2c9;
+  background-color: #055052;
+}
+
+.bottompage .box .content .calculating {
+  margin-top: 20px;
+}
+
+.bottompage .box .footer {
+  background-color: #f3f2c9;
+  color: #055052;
+  height: 50px;
+  border-top: 1px solid black;
+  border-radius: inherit;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.bottompage .box .footer .link {
+  margin-right: 20px;
+}
+
+.bottompage .box .footer a {
+  color: #055052;
+}
+
+.toppage.darktheme {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: rgba(243, 242, 201, 0.6);
+}
+
+.toppage.darktheme .nav.darktheme {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #055052;
+  color: #f3f2c9;
+}
+
+.toppage.darktheme .nav.darktheme .button {
+  background-color: #f3f2c9;
+}
+
+.toppage.darktheme .nav.darktheme .sliderinner.darktheme {
+  background-color: #f3f2c9 !important;
+}
+
+.toppage.darktheme .content.darktheme {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #055052;
+  color: #f3f2c9;
+}
+
+.toppage.darktheme .content.darktheme .checkbtn.darktheme {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #f3f2c9 !important;
+  color: #055052 !important;
+}
+
+.bottompage.darktheme {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: rgba(243, 242, 201, 0.6);
+}
+
+.bottompage.darktheme .nav.darktheme {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #055052;
+  color: #f3f2c9;
+}
+
+.bottompage.darktheme .nav.darktheme .sliderinner.darktheme {
+  background-color: #f3f2c9 !important;
+}
+
+.bottompage.darktheme .content.darktheme {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #055052;
+  color: #f3f2c9;
+}
+
+.bottompage.darktheme .content.darktheme .checkbtn.darktheme {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: #f3f2c9 !important;
+  color: #055052 !important;
+}
+
+.bottompage.darktheme .footer.darktheme {
+  background-color: #055052;
+  color: #f3f2c9;
+}
+
+.bottompage.darktheme .footer.darktheme a {
+  color: #f3f2c9;
+}
+
+@media screen and (max-width: 1200px) {
+  .bottompage .formatdetails {
+    display: none;
+  }
+  .bottompage input {
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
